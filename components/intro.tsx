@@ -6,7 +6,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi'
+import { HiDownload } from 'react-icons/hi';
+import { BsLinkedin } from 'react-icons/bs';
 
 export default function Intro() {
   return (
@@ -48,6 +49,7 @@ export default function Intro() {
         <div>
             <Link href='#Contact' className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full'>Contact me here <BsArrowRight/></Link>
             <a className='bg-white px-7 py-3 flex items-center gap-2 rounded-full'>Download Resume <HiDownload /></a>
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full'> <BsLinkedin /></a>
         </div>
     </section>
   )
