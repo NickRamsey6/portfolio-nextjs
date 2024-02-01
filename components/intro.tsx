@@ -36,10 +36,12 @@ export default function Intro() {
                         👋</motion.span>
             </div>
         </div>
-        <p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'>
+        <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}>
             <span className='font-bold'>Hello, I am Nick.</span> I am a <span className='font-bold'> full-stack developer </span>with<span className='font-bold'> 4 years </span>
             of experience. I enjoy building sites and apps. My focus is <span className='underline'>React (Next.js)</span>
-        </p>
+        </motion.p>
     </section>
   )
 }
