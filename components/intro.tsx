@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { BsLinkedin } from 'react-icons/bs';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -50,6 +51,7 @@ export default function Intro() {
             <Link href='#Contact' className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full'>Contact me here <BsArrowRight/></Link>
             <a className='bg-white px-7 py-3 flex items-center gap-2 rounded-full'>Download Resume <HiDownload /></a>
             <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full'> <BsLinkedin /></a>
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full'> <FaGithubSquare /></a>
         </div>
     </section>
   )
