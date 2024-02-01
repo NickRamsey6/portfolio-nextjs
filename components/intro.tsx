@@ -3,7 +3,9 @@
 import React from 'react';
 import profilePic from '@/public/pfp.jpg';
 import Image from 'next/image';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight } from 'react-icons/bs';
 
 export default function Intro() {
   return (
@@ -42,6 +44,9 @@ export default function Intro() {
             <span className='font-bold'>Hello, I am Nick.</span> I am a <span className='font-bold'> full-stack developer </span>with<span className='font-bold'> 4 years </span>
             of experience. I enjoy building sites and apps. My focus is <span className='underline'>React (Next.js)</span>
         </motion.p>
+        <div>
+            <Link href='#Contact' className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full'>Contact me here <BsArrowRight/></Link>
+        </div>
     </section>
   )
 }
