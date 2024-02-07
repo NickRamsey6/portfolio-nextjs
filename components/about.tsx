@@ -1,9 +1,16 @@
-import React from 'react'
-import SectionHeading from './section-heading'
+'use client';
+
+import React from 'react';
+import SectionHeading from './section-heading';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'>
+    <motion.section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0}}
+        transition={{ delay: 0.175}}
+        >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a 
@@ -17,6 +24,6 @@ export default function About() {
        Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
        accident, sometimes on purpose (injected humour and the like).
       </p>
-    </section>
+    </motion.section>
   )
 }
