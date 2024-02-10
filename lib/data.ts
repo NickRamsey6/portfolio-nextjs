@@ -35,28 +35,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated University of Portland",
+    location: "Portland, OR",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Graduated with a B.B.A. in Business; Marketing.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2016",
+  },
+  {
+    title: "Customer Success Research Analyst @ClearlyRated",
+    location: "Portland, OR",
+    description:
+      "Led data cleaning, processing and analysis of 100,000's of data points to provide key, analysis-supported recommendations to fortune 500 c-suites.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Graduated Epicodus Bootcamp",
+    location: "Portland, OR",
+    description:
+      "Completed the Epicodus React/Ruby Development Track.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Data Engineer @Nike",
+    location: "Portland, OR",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Developed and maintained an array of diverse, end to end data collection pipelines",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020 - 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Data Engineer @Liberty Mutual Insurance",
+    location: "Seattle, WA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Translated legacy projects written in SAS and SQL to modern Python and PySpark projects run in AWS EC2.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Freelance Engineer",
+    location: "Missoula, MT",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Python, Java and Ruby. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024 - present",
   },
 ] as const;
 
