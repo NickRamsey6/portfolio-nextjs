@@ -4,4 +4,4 @@ export const validateString = (value: unknown, maxLength: number) => {
     }
 
         return true;
-}
+};

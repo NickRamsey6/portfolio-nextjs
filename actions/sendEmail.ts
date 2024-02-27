@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 
 export const sendEmail = async (formData: FormData) => {
-    const senderEmail = formData.get('email')
+    const senderEmail = formData.get('senderEmail');
     const message = formData.get('message');
 
     // Simple server side validation
@@ -22,12 +22,15 @@ export const sendEmail = async (formData: FormData) => {
             error: 'Invalid message'
         }
     }
-
-    resend.emails.send({
-       from: 'onboarding@resend.dev',
-       to: 'nramseysc@gmail.com',
-       subject: 'Message from contact form',
-       reply_to: senderEmail,
-       text: message,
-    })
+    try {
+        await resend.emails.send({
+            from: 'Portfolio Contact Form <onboarding@resend.dev>',
+            to: 'nramseysc@gmail.com',
+            subject: 'Message from contact form',
+            reply_to: senderEmail as string,
+            text: message as string,
+         });
+    } catch (error) {
+        console.log(error);
+    }
   };
