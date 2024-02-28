@@ -8,7 +8,7 @@ import Image from 'next/image';
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
-    const ref = useRef<HTMLElement>(null);
+    const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ['0 1', '1.33 1'],
