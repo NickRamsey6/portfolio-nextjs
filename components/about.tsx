@@ -20,10 +20,9 @@ export default function About() {
         >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a 
-      galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-      It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-      versions of Lorem Ipsum.
+      Thanks for visiting my portfolio page! I made the professional switch to software development 5 years ago and have been enjoying every new step in my programming journey ever since! Originally my excel-based skills
+      translated well to more statistics-based programming languages like R. But I also branched out further into the world of web development with JavaScript (primarily React.js and Next.js), Ruby (on Rails), and Java. Professionally,
+      I have used Python and database languages like SQL and SAS. I come from a test driven development background and believe there is no better feeling in programming than passing all your tests!
       </p>
       <p className='mb-3'>
       It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
